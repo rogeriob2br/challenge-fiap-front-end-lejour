@@ -3,9 +3,11 @@ import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
 import {
-  Budget,
-  TotalUsers,
-  TasksProgress,
+  CreatedYear,
+  TotalUsers, 
+  TotalUsersByMonth,
+  TotalUsersByWeek,
+  UnfinishiedRegistrations,
   TotalProfit,
   LatestSales,
   UsersByDevice,
@@ -35,15 +37,6 @@ const Users = () => {
           xl={3}
           xs={12}
         >
-          <Budget />
-        </Grid>
-        <Grid
-          item
-          lg={3}
-          sm={6}
-          xl={3}
-          xs={12}
-        >
           <TotalUsers />
         </Grid>
         <Grid
@@ -53,7 +46,16 @@ const Users = () => {
           xl={3}
           xs={12}
         >
-          <TasksProgress />
+          <CreatedYear />
+        </Grid>
+        <Grid
+          item
+          lg={3}
+          sm={6}
+          xl={3}
+          xs={12}
+        >   
+          <TotalUsersByMonth />
         </Grid>
         <Grid
           item
@@ -62,7 +64,16 @@ const Users = () => {
           xl={3}
           xs={12}
         >
-          <TotalProfit />
+          <TotalUsersByWeek />
+        </Grid>
+        <Grid
+          item
+          lg={3}
+          sm={6}
+          xl={3}
+          xs={12}
+        >
+          <UnfinishiedRegistrations />
         </Grid>
         <Grid
           item
