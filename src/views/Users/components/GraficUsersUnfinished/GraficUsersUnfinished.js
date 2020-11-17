@@ -15,6 +15,8 @@ import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import RefreshIcon from '@material-ui/icons/Refresh';
 import TabletMacIcon from '@material-ui/icons/TabletMac';
+import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersByDevice = props => {
+const GraficUsersUnfinished = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -47,18 +49,18 @@ const UsersByDevice = props => {
   const data = {
     datasets: [
       {
-        data: [63, 15, 22],
+        data: [63, 22, 15],
         backgroundColor: [
           theme.palette.primary.main,
-          theme.palette.error.main,
-          theme.palette.warning.main
+          theme.palette.warning.main,
+          theme.palette.error.main
         ],
         borderWidth: 8,
         borderColor: theme.palette.white,
         hoverBorderColor: theme.palette.white
       }
     ],
-    labels: ['Desktop', 'Tablet', 'Mobile']
+    labels: ['Finalizados', 'Casamaento Marcado', 'Incompletos']
   };
 
   const options = {
@@ -85,22 +87,22 @@ const UsersByDevice = props => {
 
   const devices = [
     {
-      title: 'Desktop',
+      title: 'Finalizados',
       value: '63',
-      icon: <LaptopMacIcon />,
+      icon: <AssignmentTurnedInIcon />,
       color: theme.palette.primary.main
     },
     {
-      title: 'Tablet',
-      value: '15',
-      icon: <TabletMacIcon />,
-      color: theme.palette.error.main
+      title: 'Casamaento Marcado',
+      value: '22',
+      icon: <CalendarTodayIcon />,
+      color: theme.palette.warning.main
     },
     {
-      title: 'Mobile',
-      value: '23',
+      title: 'Incompletos',
+      value: '15',
       icon: <PhoneIphoneIcon />,
-      color: theme.palette.warning.main
+      color: theme.palette.error.main
     }
   ];
 
@@ -115,7 +117,7 @@ const UsersByDevice = props => {
             <RefreshIcon />
           </IconButton>
         }
-        title="Users By Device"
+        title="Cadastros finalizados"
       />
       <Divider />
       <CardContent>
@@ -147,8 +149,8 @@ const UsersByDevice = props => {
   );
 };
 
-UsersByDevice.propTypes = {
+GraficUsersUnfinished.propTypes = {
   className: PropTypes.string
 };
 
-export default UsersByDevice;
+export default GraficUsersUnfinished;
