@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { Bar } from 'react-chartjs-2';
+import { NavLink as RouterLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
@@ -63,6 +64,7 @@ const LatestSales = props => {
           color="primary"
           size="small"
           variant="text"
+          href='/userlist'
         >
           Detalhes <ArrowRightIcon />
         </Button>

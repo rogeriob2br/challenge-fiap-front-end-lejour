@@ -23,6 +23,9 @@ const useStyles = makeStyles(theme => ({
   exportButton: {
     marginRight: theme.spacing(1)
   },
+  backButton: {
+    marginRight: theme.spacing(1)
+  },
   searchInput: {
     marginRight: theme.spacing(1)
   }
@@ -40,19 +43,20 @@ const UsersToolbar = props => {
     >
       <div className={classes.row}>
         <span className={classes.spacer} />
-        <Button className={classes.importButton}>Import</Button>
-        <Button className={classes.exportButton}>Export</Button>
+        <Button className={classes.backButton} href="/users">Voltar</Button>
+        <Button className={classes.importButton}>Importar</Button>
+        <Button className={classes.exportButton}>Exportar</Button>
         <Button
           color="primary"
           variant="contained"
         >
-          Add user
+          Adicionar Usuário
         </Button>
       </div>
       <div className={classes.row}>
         <SearchInput
           className={classes.searchInput}
-          placeholder="Search user"
+          placeholder="Pesquisar usuario"
         />
       </div>
     </div>

@@ -8,11 +8,7 @@ import {
   TotalUsersByMonth,
   TotalUsersByWeek,
   GraficUsersUnfinished,
-  UnfinishiedRegistrations,
-  TotalProfit,
   LatestSales,
-  UsersByDevice,
-  LatestProducts,
   LatestOrders
 } from './components';
 
