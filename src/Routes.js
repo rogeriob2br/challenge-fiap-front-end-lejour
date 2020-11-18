@@ -19,7 +19,8 @@ import {
   Users as UsersView,
   Weddings as WeddingsView,
   Invoices as InvoicesView,
-  Appointment as AppointmentView
+  Appointment as AppointmentView,
+  VendorDetail as VendorDetailView
 } from './views';
 
 const Routes = () => {
@@ -35,6 +36,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/vendors"
+      />
+      <RouteWithLayout
+        component={VendorDetailView}
+        exact
+        layout={MainLayout}
+        path="/vendordetail"
       />
       <RouteWithLayout
         component={UsersView}

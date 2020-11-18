@@ -13,3 +13,4 @@ export { default as Users } from './Users';
 export { default as Weddings } from './Weddings';
 export { default as Invoices } from './Invoices';
 export { default as Appointment } from './Appointment';
+export { default as VendorDetail } from './VendorDetail';
