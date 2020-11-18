@@ -49,7 +49,7 @@ const WeddingsPend = props => {
       {
         data: [63, 15, 22],
         backgroundColor: [
-          theme.palette.success.light,
+          theme.palette.primary.main,
           theme.palette.error.main,
           theme.palette.warning.main
         ],
@@ -58,7 +58,7 @@ const WeddingsPend = props => {
         hoverBorderColor: theme.palette.white
       }
     ],
-    labels: ['Fechado', 'Negociando', 'Recusados']
+    labels: ['Desktop', 'Tablet', 'Mobile']
   };
 
   const options = {
@@ -85,19 +85,19 @@ const WeddingsPend = props => {
 
   const devices = [
     {
-      title: 'Fechado',
+      title: 'Realizado',
       value: '63',
       icon: <LaptopMacIcon />,
-      color: theme.palette.success.light
+      color: theme.palette.primary.main
     },
     {
-      title: 'Negociando',
+      title: 'Agendado',
       value: '15',
       icon: <TabletMacIcon />,
       color: theme.palette.error.main
     },
     {
-      title: 'Recusados',
+      title: 'Pendente',
       value: '23',
       icon: <PhoneIphoneIcon />,
       color: theme.palette.warning.main
@@ -115,7 +115,7 @@ const WeddingsPend = props => {
             <RefreshIcon />
           </IconButton>
         }
-        title="Negocições"
+        title="Status de Casamentos"
       />
       <Divider />
       <CardContent>

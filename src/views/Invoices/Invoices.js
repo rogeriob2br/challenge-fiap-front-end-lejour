@@ -7,6 +7,7 @@ import {
   TotalUsers,
   TasksProgress,
   TotalProfit,
+  ProfitByCategories,
   LatestSales,
   UsersByDevice,
   LatestProducts,
@@ -66,36 +67,27 @@ const Invoices = () => {
         </Grid>
         <Grid
           item
-          lg={8}
-          md={12}
-          xl={9}
+          lg={4}
+          md={6}
+          xl={4}
           xs={12}
         >
-          <LatestSales />
+          <ProfitByCategories />
         </Grid>
         <Grid
           item
           lg={4}
           md={6}
-          xl={3}
+          xl={4}
           xs={12}
         >
-          <UsersByDevice />
+          <LatestOrders />
         </Grid>
         <Grid
           item
           lg={4}
           md={6}
-          xl={3}
-          xs={12}
-        >
-          <LatestProducts />
-        </Grid>
-        <Grid
-          item
-          lg={8}
-          md={12}
-          xl={9}
+          xl={4}
           xs={12}
         >
           <LatestOrders />

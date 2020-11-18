@@ -13,6 +13,7 @@ import {
   LatestSales,
   UsersByDevice,
   WeddingsPend,
+  BudgetPend,
   LatestOrders
 } from './components';
 
@@ -110,7 +111,7 @@ const Weddings = () => {
           xl={4}
           xs={12}
         >
-          <UsersByDevice />
+          <BudgetPend />
         </Grid>
       </Grid>
     </div>

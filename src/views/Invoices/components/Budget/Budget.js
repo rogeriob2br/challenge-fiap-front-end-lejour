@@ -62,9 +62,9 @@ const Budget = props => {
               gutterBottom
               variant="body2"
             >
-              BUDGET
+              Comissão Média por casamento no mês
             </Typography>
-            <Typography variant="h3">$24,000</Typography>
+            <Typography variant="h3">R$1,200,00</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -84,7 +84,7 @@ const Budget = props => {
             className={classes.caption}
             variant="caption"
           >
-            Since last month
+            Menor que o mes anterior
           </Typography>
         </div>
       </CardContent>

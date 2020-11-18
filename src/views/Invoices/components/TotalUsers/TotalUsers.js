@@ -62,9 +62,9 @@ const TotalUsers = props => {
               gutterBottom
               variant="body2"
             >
-              TOTAL USERS
+              Valor Médio dos Casamentos
             </Typography>
-            <Typography variant="h3">1,600</Typography>
+            <Typography variant="h3">R$ 9,600,00</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -84,7 +84,7 @@ const TotalUsers = props => {
             className={classes.caption}
             variant="caption"
           >
-            Since last month
+            Maior que mês anterior
           </Typography>
         </div>
       </CardContent>
