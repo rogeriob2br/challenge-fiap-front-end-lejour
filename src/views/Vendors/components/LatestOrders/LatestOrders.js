@@ -69,10 +69,10 @@ const LatestOrders = props => {
             size="small"
             variant="outlined"
           >
-            New entry
+              EXPORTAR
           </Button>
         }
-        title="Latest Orders"
+        title="Top 5 Mais favoritados"
       />
       <Divider />
       <CardContent className={classes.content}>
@@ -81,8 +81,8 @@ const LatestOrders = props => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Order Ref</TableCell>
-                  <TableCell>Customer</TableCell>
+                  <TableCell>ID</TableCell>
+                  <TableCell>Vendor</TableCell>
                   <TableCell sortDirection="desc">
                     <Tooltip
                       enterDelay={300}
@@ -92,11 +92,12 @@ const LatestOrders = props => {
                         active
                         direction="desc"
                       >
-                        Date
+                        Data de inicio
                       </TableSortLabel>
                     </Tooltip>
                   </TableCell>
-                  <TableCell>Status</TableCell>
+                  <TableCell>Categoria</TableCell>
+                  <TableCell>Likes</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -120,6 +121,7 @@ const LatestOrders = props => {
                         {order.status}
                       </div>
                     </TableCell>
+                    <TableCell>{order.likes}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

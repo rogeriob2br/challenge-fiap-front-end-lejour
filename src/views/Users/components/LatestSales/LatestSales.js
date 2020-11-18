@@ -47,7 +47,7 @@ const LatestSales = props => {
            Últimos 7 dias <ArrowDropDownIcon />
           </Button>
         }
-        title="Histórico"
+        title="Comparativo de Usuários Cadastrados"
       />
       <Divider />
       <CardContent>
@@ -58,7 +58,7 @@ const LatestSales = props => {
           />
         </div>
       </CardContent>
-      <Divider />
+      <Divider /> 
       <CardActions className={classes.actions}>
         <Button
           color="primary"
