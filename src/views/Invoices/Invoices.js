@@ -76,18 +76,9 @@ const Invoices = () => {
         </Grid>
         <Grid
           item
-          lg={4}
-          md={6}
-          xl={4}
-          xs={12}
-        >
-          <LatestOrders />
-        </Grid>
-        <Grid
-          item
-          lg={4}
-          md={6}
-          xl={4}
+          lg={8}
+          md={8}
+          xl={8}
           xs={12}
         >
           <LatestOrders />

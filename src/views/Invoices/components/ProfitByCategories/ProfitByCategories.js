@@ -63,16 +63,7 @@ const ProfitByCategories = props => {
       className={clsx(classes.root, className)}
     >
       <CardHeader
-        action={
-          <Button
-            color="primary"
-            size="small"
-            variant="outlined"
-          >
-            New entry
-          </Button>
-        }
-        title="Latest Orders"
+        title="Lucro por Categoria de fornecedor"
       />
       <Divider />
       <CardContent className={classes.content}>
@@ -81,22 +72,8 @@ const ProfitByCategories = props => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Order Ref</TableCell>
-                  <TableCell>Customer</TableCell>
-                  <TableCell sortDirection="desc">
-                    <Tooltip
-                      enterDelay={300}
-                      title="Sort"
-                    >
-                      <TableSortLabel
-                        active
-                        direction="desc"
-                      >
-                        Date
-                      </TableSortLabel>
-                    </Tooltip>
-                  </TableCell>
-                  <TableCell>Status</TableCell>
+                  <TableCell>Lucros</TableCell>
+                  <TableCell>Categoria</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -105,21 +82,8 @@ const ProfitByCategories = props => {
                     hover
                     key={order.id}
                   >
-                    <TableCell>{order.ref}</TableCell>
-                    <TableCell>{order.customer.name}</TableCell>
-                    <TableCell>
-                      {moment(order.createdAt).format('DD/MM/YYYY')}
-                    </TableCell>
-                    <TableCell>
-                      <div className={classes.statusContainer}>
-                        <StatusBullet
-                          className={classes.status}
-                          color={statusColors[order.status]}
-                          size="sm"
-                        />
-                        {order.status}
-                      </div>
-                    </TableCell>
+                    <TableCell>{order.profit}</TableCell>
+                    <TableCell>{order.categorie}</TableCell>                    
                   </TableRow>
                 ))}
               </TableBody>
@@ -129,13 +93,6 @@ const ProfitByCategories = props => {
       </CardContent>
       <Divider />
       <CardActions className={classes.actions}>
-        <Button
-          color="primary"
-          size="small"
-          variant="text"
-        >
-          View all <ArrowRightIcon />
-        </Button>
       </CardActions>
     </Card>
   );

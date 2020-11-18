@@ -9,7 +9,9 @@ export default [
       name: 'Ekaterina Tankova'
     },
     createdAt: 1555016400000,
-    status: 'pending'
+    status: 'pending',
+    profit: 'R$ 170,000,00',
+    categorie: 'Assessoria de Casamento'
   },
   {
     id: uuid(),
@@ -19,7 +21,9 @@ export default [
       name: 'Cao Yu'
     },
     createdAt: 1555016400000,
-    status: 'delivered'
+    status: 'delivered',
+    profit: 'R$ 500,000,00',
+    categorie: 'Espaço'
   },
   {
     id: uuid(),
@@ -29,7 +33,9 @@ export default [
       name: 'Alexa Richardson'
     },
     createdAt: 1554930000000,
-    status: 'refunded'
+    status: 'refunded',
+    profit: 'R$ 350,000,00',
+    categorie: 'Buffet'
   },
   {
     id: uuid(),
@@ -39,26 +45,8 @@ export default [
       name: 'Anje Keizer'
     },
     createdAt: 1554757200000,
-    status: 'pending'
-  },
-  {
-    id: uuid(),
-    ref: 'CDD1045',
-    amount: 32.54,
-    customer: {
-      name: 'Clarke Gillebert'
-    },
-    createdAt: 1554670800000,
-    status: 'delivered'
-  },
-  {
-    id: uuid(),
-    ref: 'CDD1044',
-    amount: 16.76,
-    customer: {
-      name: 'Adam Denisov'
-    },
-    createdAt: 1554670800000,
-    status: 'delivered'
+    status: 'pending',
+    profit: 'R$ 1,700,000,00',
+    categorie: 'Lista de Presentes'
   }
 ];

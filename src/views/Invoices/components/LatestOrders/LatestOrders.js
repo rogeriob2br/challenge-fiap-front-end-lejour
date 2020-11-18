@@ -63,40 +63,19 @@ const LatestOrders = props => {
       className={clsx(classes.root, className)}
     >
       <CardHeader
-        action={
-          <Button
-            color="primary"
-            size="small"
-            variant="outlined"
-          >
-            New entry
-          </Button>
-        }
-        title="Latest Orders"
+        title="Top Fornecedores por Comissão"
       />
-      <Divider />
+       <Divider />
       <CardContent className={classes.content}>
         <PerfectScrollbar>
           <div className={classes.inner}>
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Order Ref</TableCell>
-                  <TableCell>Customer</TableCell>
-                  <TableCell sortDirection="desc">
-                    <Tooltip
-                      enterDelay={300}
-                      title="Sort"
-                    >
-                      <TableSortLabel
-                        active
-                        direction="desc"
-                      >
-                        Date
-                      </TableSortLabel>
-                    </Tooltip>
-                  </TableCell>
-                  <TableCell>Status</TableCell>
+                  <TableCell>Vendor</TableCell>
+                  <TableCell>Categoria</TableCell>
+                  <TableCell>Lucros</TableCell>
+                  <TableCell>Ações</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -104,22 +83,11 @@ const LatestOrders = props => {
                   <TableRow
                     hover
                     key={order.id}
-                  >
-                    <TableCell>{order.ref}</TableCell>
+                  > 
                     <TableCell>{order.customer.name}</TableCell>
-                    <TableCell>
-                      {moment(order.createdAt).format('DD/MM/YYYY')}
-                    </TableCell>
-                    <TableCell>
-                      <div className={classes.statusContainer}>
-                        <StatusBullet
-                          className={classes.status}
-                          color={statusColors[order.status]}
-                          size="sm"
-                        />
-                        {order.status}
-                      </div>
-                    </TableCell>
+                    <TableCell>{order.categoria}</TableCell>
+                    <TableCell>{order.likes}</TableCell>
+                    <TableCell><Button href='/vendordetail'>Detalhes</Button></TableCell>
                   </TableRow>
                 ))}
               </TableBody>
