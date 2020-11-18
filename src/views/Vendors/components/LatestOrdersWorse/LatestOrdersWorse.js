@@ -50,7 +50,7 @@ const statusColors = {
   refunded: 'danger'
 };
 
-const LatestOrders = props => {
+const LatestOrdersWorse = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -72,7 +72,7 @@ const LatestOrders = props => {
               EXPORTAR
           </Button>
         }
-        title="Top 5 Mais favoritados"
+        title="Top 5 Menos favoritados"
       />
       <Divider />
       <CardContent className={classes.content}>
@@ -118,8 +118,8 @@ const LatestOrders = props => {
   );
 };
 
-LatestOrders.propTypes = {
+LatestOrdersWorse.propTypes = {
   className: PropTypes.string
 };
 
-export default LatestOrders;
+export default LatestOrdersWorse;

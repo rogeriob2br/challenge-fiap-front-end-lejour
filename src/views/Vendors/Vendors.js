@@ -9,7 +9,8 @@ import {
   TotalUsersByWeek,
   GraficUsersUnfinished,
   LatestSales,
-  LatestOrders
+  LatestOrders,
+  LatestOrdersWorse
 } from './components';
 
 const useStyles = makeStyles(theme => ({
@@ -29,12 +30,21 @@ const Vendors = () => {
       >
         <Grid
           item
-          lg={12}
-          md={12}
-          xl={12}
+          lg={6}
+          md={6}
+          xl={6}
           xs={12}
         >
           <LatestOrders />
+        </Grid>
+        <Grid
+          item
+          lg={6}
+          md={6}
+          xl={6}
+          xs={12}
+        >
+          <LatestOrdersWorse />
         </Grid>
       </Grid>
     </div>

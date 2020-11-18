@@ -47,7 +47,7 @@ const LatestSales = props => {
            Últimos 7 dias <ArrowDropDownIcon />
           </Button>
         }
-        title="Histórico"
+        title="Lucro Realizado vs Perdido"
       />
       <Divider />
       <CardContent>

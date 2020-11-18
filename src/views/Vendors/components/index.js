@@ -10,5 +10,5 @@ export { default as UsersByDevice } from './UsersByDevice';
 export { default as TotalUsersByMonth } from './TotalUsersByMonth';
 export { default as TotalUsersByWeek } from './TotalUsersByWeek';
 export { default as GraficUsersUnfinished } from './GraficUsersUnfinished';
-
+export { default as LatestOrdersWorse } from './LatestOrdersWorse';
 export { default as UnfinishiedRegistrations } from './UnfinishiedRegistrations';

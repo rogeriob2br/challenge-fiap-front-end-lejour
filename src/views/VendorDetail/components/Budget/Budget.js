@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import MoneyIcon from '@material-ui/icons/Money';
 
 const useStyles = makeStyles(theme => ({
@@ -110,6 +111,21 @@ const Budget = props => {
               </Avatar>
             </Grid> 
           </Grid>             
+        </div>
+        <div className={classes.difference}>
+          <ArrowUpwardIcon className={classes.differenceIcon} />
+          <Typography
+            className={classes.differenceValue}
+            variant="body2"
+          >
+            1º
+          </Typography>
+          <Typography
+            className={classes.caption}
+            variant="caption"
+          >
+            Ranking da categoria
+          </Typography>
         </div>
 
       </CardContent>
