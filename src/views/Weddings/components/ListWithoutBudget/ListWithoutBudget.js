@@ -63,7 +63,7 @@ const ListWithoutBudget = props => {
       className={clsx(classes.root, className)}
     >
       <CardHeader
-        title="Casamentos sem data"
+        title="Casamentos sem Budget"
       />
       <Divider />
       <CardContent className={classes.content}>

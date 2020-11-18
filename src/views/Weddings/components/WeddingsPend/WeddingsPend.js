@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersByDevice = props => {
+const WeddingsPend = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -49,8 +49,8 @@ const UsersByDevice = props => {
       {
         data: [63, 15, 22],
         backgroundColor: [
-          theme.palette.info.main,
           theme.palette.primary.main,
+          theme.palette.error.main,
           theme.palette.warning.main
         ],
         borderWidth: 8,
@@ -85,19 +85,19 @@ const UsersByDevice = props => {
 
   const devices = [
     {
-      title: 'Classico',
+      title: 'Realizado',
       value: '63',
       icon: <LaptopMacIcon />,
       color: theme.palette.primary.main
     },
     {
-      title: 'Moderno',
+      title: 'Agendado',
       value: '15',
       icon: <TabletMacIcon />,
       color: theme.palette.error.main
     },
     {
-      title: 'Rustico',
+      title: 'Pendente',
       value: '23',
       icon: <PhoneIphoneIcon />,
       color: theme.palette.warning.main
@@ -115,7 +115,7 @@ const UsersByDevice = props => {
             <RefreshIcon />
           </IconButton>
         }
-        title="Casamentos por Estilo"
+        title="Status de Casamentos"
       />
       <Divider />
       <CardContent>
@@ -147,8 +147,8 @@ const UsersByDevice = props => {
   );
 };
 
-UsersByDevice.propTypes = {
+WeddingsPend.propTypes = {
   className: PropTypes.string
 };
 
-export default UsersByDevice;
+export default WeddingsPend;

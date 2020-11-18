@@ -12,6 +12,7 @@ import {
   TotalProfit,
   LatestSales,
   UsersByDevice,
+  WeddingsPend,
   LatestOrders
 } from './components';
 
@@ -100,7 +101,7 @@ const Weddings = () => {
           xl={4}
           xs={12}
         >
-          <UsersByDevice />
+          <WeddingsPend />
         </Grid>
         <Grid
           item

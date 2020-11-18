@@ -9,3 +9,4 @@ export { default as UsersByDevice } from './UsersByDevice';
 export { default as WeddingByMonth } from './WeddingByMonth';
 export { default as ListWeddingsWeek } from './ListWeddingsWeek';
 export { default as ListWithoutBudget } from './ListWithoutBudget';
+export {default as WeddingsPend} from './WeddingsPend';

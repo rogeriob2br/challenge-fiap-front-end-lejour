@@ -60,11 +60,6 @@ const Sidebar = props => {
       title: 'Invoices',
       href: '/invoices',
       icon: <ListAltIcon />
-    },
-    {
-      title: 'Apointments', 
-      href: '/appointment',
-      icon: <CalendarTodayIcon />
     }
   ];
 
