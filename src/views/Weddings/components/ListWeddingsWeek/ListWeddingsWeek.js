@@ -46,11 +46,11 @@ const useStyles = makeStyles(theme => ({
 
 const statusColors = {
   delivered: 'success',
-  Pendente: 'info',
+  pending: 'info',
   refunded: 'danger'
 };
 
-const LatestOrders = props => {
+const ListWeddingsWeek = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -63,7 +63,7 @@ const LatestOrders = props => {
       className={clsx(classes.root, className)}
     >
       <CardHeader
-        title="Casamentos sem data"
+        title="Casamentos na Semana"
       />
       <Divider />
       <CardContent className={classes.content}>
@@ -72,8 +72,22 @@ const LatestOrders = props => {
             <Table>
               <TableHead>
                 <TableRow>
-                <TableCell>Status</TableCell>
-                  <TableCell>Usuário</TableCell>
+                  <TableCell>Order Ref</TableCell>
+                  <TableCell>Customer</TableCell>
+                  <TableCell sortDirection="desc">
+                    <Tooltip
+                      enterDelay={300}
+                      title="Sort"
+                    >
+                      <TableSortLabel
+                        active
+                        direction="desc"
+                      >
+                        Date
+                      </TableSortLabel>
+                    </Tooltip>
+                  </TableCell>
+                  <TableCell>Status</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -82,7 +96,12 @@ const LatestOrders = props => {
                     hover
                     key={order.id}
                   >
-                      <TableCell>
+                    <TableCell>{order.ref}</TableCell>
+                    <TableCell>{order.customer.name}</TableCell>
+                    <TableCell>
+                      {moment(order.createdAt).format('DD/MM/YYYY')}
+                    </TableCell>
+                    <TableCell>
                       <div className={classes.statusContainer}>
                         <StatusBullet
                           className={classes.status}
@@ -92,8 +111,6 @@ const LatestOrders = props => {
                         {order.status}
                       </div>
                     </TableCell>
-                    <TableCell>{order.customer.name}</TableCell>
-                    
                   </TableRow>
                 ))}
               </TableBody>
@@ -115,8 +132,8 @@ const LatestOrders = props => {
   );
 };
 
-LatestOrders.propTypes = {
+ListWeddingsWeek.propTypes = {
   className: PropTypes.string
 };
 
-export default LatestOrders;
+export default ListWeddingsWeek;

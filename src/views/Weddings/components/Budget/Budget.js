@@ -62,9 +62,9 @@ const Budget = props => {
               gutterBottom
               variant="body2"
             >
-              BUDGET
+              Casamentos Agendados para Hoje
             </Typography>
-            <Typography variant="h3">$24,000</Typography>
+            <Typography variant="h3">3</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -78,13 +78,13 @@ const Budget = props => {
             className={classes.differenceValue}
             variant="body2"
           >
-            12%
+            30%
           </Typography>
           <Typography
             className={classes.caption}
             variant="caption"
           >
-            Since last month
+            Menor do que ontem.
           </Typography>
         </div>
       </CardContent>

@@ -5,11 +5,13 @@ import { Grid } from '@material-ui/core';
 import {
   Budget,
   TotalUsers,
+  WeddingByMonth,
+  ListWeddingsWeek,
+  ListWithoutBudget, 
   TasksProgress,
   TotalProfit,
   LatestSales,
   UsersByDevice,
-  LatestProducts,
   LatestOrders
 } from './components';
 
@@ -30,54 +32,63 @@ const Weddings = () => {
       >
         <Grid
           item
-          lg={3}
+          lg={4}
           sm={6}
-          xl={3}
+          xl={4}
           xs={12}
         >
           <Budget />
         </Grid>
         <Grid
           item
-          lg={3}
+          lg={4}
           sm={6}
-          xl={3}
+          xl={4}
           xs={12}
         >
           <TotalUsers />
         </Grid>
         <Grid
           item
-          lg={3}
+          lg={4}
           sm={6}
-          xl={3}
+          xl={4}
           xs={12}
         >
-          <TasksProgress />
+          <WeddingByMonth />
         </Grid>
         <Grid
           item
-          lg={3}
-          sm={6}
-          xl={3}
+          lg={4}
+          md={9}
+          xl={4}
           xs={12}
         >
-          <TotalProfit />
+          <LatestOrders />
         </Grid>
         <Grid
           item
-          lg={8}
-          md={12}
-          xl={9}
+          lg={4}
+          md={9}
+          xl={4}
           xs={12}
         >
-          <LatestSales />
+          <ListWeddingsWeek />
+        </Grid>
+        <Grid
+          item
+          lg={4}
+          md={9}
+          xl={4}
+          xs={12}
+        >
+          <ListWithoutBudget />
         </Grid>
         <Grid
           item
           lg={4}
           md={6}
-          xl={3}
+          xl={4}
           xs={12}
         >
           <UsersByDevice />
@@ -86,19 +97,19 @@ const Weddings = () => {
           item
           lg={4}
           md={6}
-          xl={3}
+          xl={4}
           xs={12}
         >
-          <LatestProducts />
+          <UsersByDevice />
         </Grid>
         <Grid
           item
-          lg={8}
-          md={12}
-          xl={9}
+          lg={4}
+          md={6}
+          xl={4}
           xs={12}
         >
-          <LatestOrders />
+          <UsersByDevice />
         </Grid>
       </Grid>
     </div>

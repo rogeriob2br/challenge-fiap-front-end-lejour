@@ -50,7 +50,7 @@ const statusColors = {
   refunded: 'danger'
 };
 
-const LatestOrders = props => {
+const ListWithoutBudget = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -115,8 +115,8 @@ const LatestOrders = props => {
   );
 };
 
-LatestOrders.propTypes = {
+ListWithoutBudget.propTypes = {
   className: PropTypes.string
 };
 
-export default LatestOrders;
+export default ListWithoutBudget;
